@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lineups",
+  "info": {
+    "name": "Lineup",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "uuid": {
+      "type": "uid",
+      "required": true,
+      "minLength": 3
+    },
+    "lineup_experiments": {
+      "collection": "lineup-experiment",
+      "via": "lineups",
+      "dominant": true
+    },
+    "surfaces": {
+      "via": "lineups",
+      "collection": "surface"
+    }
+  }
+}

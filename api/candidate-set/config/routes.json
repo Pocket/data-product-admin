@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/candidate-sets",
+      "handler": "candidate-set.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/candidate-sets/count",
+      "handler": "candidate-set.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/candidate-sets/:id",
+      "handler": "candidate-set.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/candidate-sets",
+      "handler": "candidate-set.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/candidate-sets/:id",
+      "handler": "candidate-set.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/candidate-sets/:id",
+      "handler": "candidate-set.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

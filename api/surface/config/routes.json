@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/surfaces",
+      "handler": "surface.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/surfaces/count",
+      "handler": "surface.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/surfaces/:id",
+      "handler": "surface.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/surfaces",
+      "handler": "surface.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/surfaces/:id",
+      "handler": "surface.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/surfaces/:id",
+      "handler": "surface.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

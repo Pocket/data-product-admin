@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "surfaces",
+  "info": {
+    "name": "Surface",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "description": {
+      "type": "text"
+    },
+    "exampleUrl": {
+      "type": "string"
+    },
+    "lineups": {
+      "via": "surfaces",
+      "collection": "lineup",
+      "dominant": true
+    },
+    "slates": {
+      "via": "surfaces",
+      "collection": "slate",
+      "dominant": true
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "slate_experiments",
+  "info": {
+    "name": "Slate Experiment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "candidateSets": {
+      "via": "slateExperiment",
+      "collection": "candidate-set"
+    },
+    "rankers": {
+      "via": "slateExperiment",
+      "collection": "ranker"
+    },
+    "slate": {
+      "via": "slateExperiments",
+      "model": "slate"
+    }
+  }
+}

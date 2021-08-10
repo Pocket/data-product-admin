@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "candidate_sets",
+  "info": {
+    "name": "Candidate Set",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uuid": {
+      "type": "uid",
+      "required": true,
+      "minLength": 3
+    },
+    "slateExperiment": {
+      "via": "candidateSets",
+      "model": "slate-experiment"
+    }
+  }
+}

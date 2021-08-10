@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "slates",
+  "info": {
+    "name": "Slate",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uuid": {
+      "type": "uid",
+      "required": true,
+      "minLength": 3
+    },
+    "displayName": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "refresh": {
+      "type": "string"
+    },
+    "slateExperiments": {
+      "via": "slate",
+      "collection": "slate-experiment"
+    },
+    "lineupExperiment": {
+      "via": "slates",
+      "model": "lineup-experiment"
+    },
+    "surfaces": {
+      "via": "slates",
+      "collection": "surface"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    }
+  }
+}

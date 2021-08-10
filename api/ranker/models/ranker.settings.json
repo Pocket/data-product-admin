@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rankers",
+  "info": {
+    "name": "Ranker",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "minLength": 3
+    },
+    "slateExperiment": {
+      "via": "rankers",
+      "model": "slate-experiment"
+    },
+    "lineupExperiment": {
+      "via": "rankers",
+      "model": "lineup-experiment"
+    }
+  }
+}

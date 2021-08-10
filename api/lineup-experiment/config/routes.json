@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lineup-experiments",
+      "handler": "lineup-experiment.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lineup-experiments/count",
+      "handler": "lineup-experiment.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lineup-experiments/:id",
+      "handler": "lineup-experiment.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lineup-experiments",
+      "handler": "lineup-experiment.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lineup-experiments/:id",
+      "handler": "lineup-experiment.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lineup-experiments/:id",
+      "handler": "lineup-experiment.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lineup_experiments",
+  "info": {
+    "name": "Lineup Experiment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "rankers": {
+      "via": "lineupExperiment",
+      "collection": "ranker"
+    },
+    "slates": {
+      "via": "lineupExperiment",
+      "collection": "slate"
+    },
+    "lineups": {
+      "via": "lineup_experiments",
+      "collection": "lineup"
+    }
+  }
+}

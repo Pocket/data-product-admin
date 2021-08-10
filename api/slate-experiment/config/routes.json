@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/slate-experiments",
+      "handler": "slate-experiment.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/slate-experiments/count",
+      "handler": "slate-experiment.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/slate-experiments/:id",
+      "handler": "slate-experiment.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/slate-experiments",
+      "handler": "slate-experiment.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/slate-experiments/:id",
+      "handler": "slate-experiment.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/slate-experiments/:id",
+      "handler": "slate-experiment.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

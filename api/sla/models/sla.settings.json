@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "slas",
+  "info": {
+    "name": "SLA",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true,
+      "minLength": 3,
+      "regex": "^[A-Za-z0-9]{3,}$"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

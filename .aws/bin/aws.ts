@@ -16,15 +16,15 @@ const props = {
   }
 }
 
-const repositoryStack = new RepositoryStack(app, 'DataProductAdminRepository', props)
-const adminStack = new AdminStack(app, 'DataProductAdmin', {
-  ...props,
-  repository: repositoryStack.repository,
-})
-const pipelineStack = new PipelineStack(app, 'DataProductAdminPipeline', {
-  ...props,
-  repository: repositoryStack.repository,
-  service: adminStack.service.service,
-})
+// const repositoryStack = new RepositoryStack(app, 'DataProductAdminRepository', props)
+// const adminStack = new AdminStack(app, 'DataProductAdmin', {
+//   ...props,
+//   repository: repositoryStack.repository,
+// })
+// const pipelineStack = new PipelineStack(app, 'DataProductAdminPipeline', {
+//   ...props,
+//   repository: repositoryStack.repository,
+//   service: adminStack.service.service,
+// })
 
 // const pipelineStack = new PipelineStack(app, 'DataProductDocsPipelineStack', {...props, bucket: docStack.bucket});
